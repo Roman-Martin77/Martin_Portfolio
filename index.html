@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Martín</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IMG_Martin.jpg" alt="">
+            </div>
+            <h1>MARTIN ROMAN</h1>
+            <h2>Software Developer</h2>
+           <!---  <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Martín Román.</span> Soy un desarrollador apasionado por crear aplicaciones web sencillas con funcionalidad intuitiva.
+- Disfruto del proceso de convertir ideas en realidad mediante soluciones creativas.
+- Siempre tengo curiosidad por aprender nuevas habilidades, herramientas y conceptos.
+- Me encanta programar y desarrollar software para la vida diaria.
+- Además de trabajar en varios proyectos full stack en solitario, busco trabajar en proyectos colaborativos y en la gestión de proyectos.
+- No hay edad para seguir aprendiendo.
+- Actualmente estoy abierto a una nueva oportunidad laboral.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-03-1977
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2615 980015
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:martinrom77@gmail.com" style="color: white; text-decoration: none;">Contáctame</a> </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a href="index.html" target="_blank" class="enlace-blanco">Mi Portfolio Web</a>
+
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Bouchard 235 Godoy Cruz-Mendoza, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1KBdtRfyjKusOa3TyecrSZle67eLIEfC9/view" target="_blank" style="text-decoration: none; color: inherit;">
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+     <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="iconos-skills">
+                <div class="skill-icono">
+                    <i class="fa-brands fa-html5" style="color:#E44D26;"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-js" style="color:#F7DF1E;"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-java" style="color:#007396;"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-python" style="color:#3776AB;"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-solid fa-leaf" style="color: #6DB33F;"></i>
+                    <span>Spring</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-solid fa-database" style="color:#00618A;"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-git-alt" style="color:#F05032;"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-brands fa-github" style="color:#181717;"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-solid fa-server" style="color: #fb7a24;"></i>
+                    <span>XAMPP</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-regular fa-lightbulb" style="color: #1e8cff;"></i>
+                    <span>Intellij IDEA</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-solid fa-code" style="color: #007ACC;"></i>
+                    <span>Visual Studio Code</span>
+                </div>
+                <div class="skill-icono">
+                    <i class="fa-solid fa-code" style="color:#000;"></i>
+                    <span>NetBeans</span>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+   
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+
+                    <div class="item izq">
+                        <h4>Programación Java</h4>
+                        <span class="casa">Facultad UTN (Córdoba)</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                       </div> 
+                    <div class="item izq">
+                        <h4>Programación Python</h4>
+                        <span class="casa">Gobierno de Mendoza y Fundación Santísima Trinidad</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Web Full Stack</h4>
+                        <span class="casa">Gobierno de Mendoza y EGG</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Superior en Petróleo</h4>
+                        <span class="casa">INSUTEC - Mendoza</span>
+                        <span class="fecha">2009 - 2011</span>
+                        <p> Estudié en
+        INSUTEC(Mendoza). El título me habilita a realizar acciones de prospección,
+        exploración, explotación, evaluación y desarrollo de yacimientos de petróleo y gas,
+        operaciones de muestreo, refinación y análisis químicos. Participar en proyectos
+        petroleros. Controlar las medidas de seguridad y el medio ambiente. Operar
+        instrumentos y máquinas que intervengan en los procesos de producción. Asesorar en
+        la compra y venta de insumos, materias primas, productos y equipamiento específico
+        de la actividad </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4> Developer</h4>
+                        <span class="casa">Freelance</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>Lenguaje de Programación Java, Python. Programación orientada a objetos(POO). Clases. Base de datos. MySQL. Git,GitHub.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Administrativo, operario en taller </h4>
+                        <span class="casa">Bombas y Electrobombas</span>
+                        <span class="fecha">2008 - 2022</span>
+                        <p>Trabajos administrativos, atención al cliente, presupuestos. En taller desarme y armado de bombas de profundidad para agua.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargado de playa con caja y Encargado turno Shell shop</h4>
+                        <span class="casa">Estación de servicio Shell "Gran Libertador"</span>
+                        <span class="fecha">2004 - 2008</span>
+                        <p>Atención al cliente, venta y despacho de combustible líquido y gaseoso(GNC). Asesoramiento y venta de lubricantes. Atención y venta minimarket. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Sistema Venta Login.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Login</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Pantalla Principal Sistema Ventas.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Pantalla Principal</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Ingresar Nuevo Usuario.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Ingresar Usuario</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Ingresar Clientes.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Ingresar Clientes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Administrar Ventas.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Administrar Ventas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Administrar Categorías.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Administrar Categorías</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Reportes Ventas Pdf (Sistema Ventas).png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Reportes Facturas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ReportesPdf(Sistema Ventas).png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Reportes Ventas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Historial Graficar.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Venta</h3>
+                        <p>Historial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                
+                <!-- Formulario -->
+<div class="col">
+    <form id="form-contacto">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="text" name="telefono" placeholder="Número telefónico" required>
+        <input type="email" name="correo" placeholder="Dirección de correo" required>
+        <input type="text" name="tema" placeholder="Tema">
+        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        <button type="submit">
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+        </button>
+    </form>
+
+    <!-- Mensaje de confirmación -->
+    <div id="mensaje-confirmacion" style="display: none; color: #1CB698; margin-top: 20px;">
+        ¡Mensaje enviado con éxito!
+    </div>
+</div>
+
+                <!-- Mapa -->
+                 
+                <div class="col">
+                    <img src="img/Ubicación_1.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bouchard 235, Godoy Cruz-Mendoza 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 261 - 5980015 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: <a href="mailto:martinrom77@gmail.com" style="color: white; text-decoration: none;">Contáctame</a> </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/martinroman77
+"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Roman-Martin77" target="_blank">
+  <i class="fa-brands fa-github"></i>
+</a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+    
+</body>
+</html>
